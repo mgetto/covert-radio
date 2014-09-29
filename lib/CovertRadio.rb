@@ -65,7 +65,7 @@ class CovertRadio
 		station_result = @stations.select { |s| s["name"] == station}
 
 		# Test if station is known
-		if not station_result
+		if not station_result[0]
 			puts "Sorry, no can do."
 			exit
 		end

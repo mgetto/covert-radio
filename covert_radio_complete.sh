@@ -1,6 +1,6 @@
 #!/bin/bash
 
-_ninja-radio()
+_covert-radio()
 {
 	local cur prev opts
 	COMPREPLY=()
@@ -20,5 +20,5 @@ _ninja-radio()
     fi
 
 }
-complete -F _ninja-radio ninja-radio
+complete -F _covert-radio covert-radio
 

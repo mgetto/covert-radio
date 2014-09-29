@@ -5,13 +5,13 @@ require 'yaml'
 # Radio that allows to listen to internet radio stations.
 # Mplayer must be installed
 # Will only run on linux (maybe unix-like) systems
-class NinjaRadio
+class CovertRadio
 
 	# Set everything up.
 	def initialize
 
 		# File definitions
-		@station_file = File.expand_path '~/.ninja_radio_stations.yml'
+		@station_file = File.expand_path '~/.covert_radio_stations.yml'
 		@mp_control_file = '/tmp/mp-control'
 		@mp_info_file = '/tmp/mp-info'
 		@mp_error_file = '/tmp/mp-error'
@@ -144,7 +144,7 @@ command = ARGV[0].downcase
 station = ARGV[1] if ARGV[1]
 
 # Create Radio instance where the actual work will be done.
-radio = NinjaRadio.new
+radio = CovertRadio.new
 
 # For every command call the equivalent method on Radio
 case command

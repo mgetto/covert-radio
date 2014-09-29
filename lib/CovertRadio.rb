@@ -72,7 +72,7 @@ class CovertRadio
 
 		# Switch station if running
 		if @mp_running
-			send_command "loadfile #{station_result[0]["url"]}"
+			send_command "loadfile #{station_result[0]["stream"]}"
 		# Start mplayer if not
 		else
 			# Create control file (named pipe / fifo)
@@ -93,7 +93,7 @@ class CovertRadio
 			# -input the named pipe to use
 			# redirect standard output to info_file (contains ICY INFO)
 			# redicert error output to error_file (normally you can ignore this file)
-			start_mplayer_cmd = "mplayer -quiet -slave -input file=#{@mp_control_file} #{station_result[0]["url"]} > #{@mp_info_file} 2> #{@mp_error_file}"
+			start_mplayer_cmd = "mplayer -quiet -slave -input file=#{@mp_control_file} #{station_result[0]["stream"]} > #{@mp_info_file} 2> #{@mp_error_file}"
 
 			# start mplayer in seperate process and detach it from the current one
 			(pid = fork) ? Process.detach(pid) : exec(start_mplayer_cmd)

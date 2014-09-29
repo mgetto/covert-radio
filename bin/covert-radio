@@ -11,7 +11,7 @@ class CovertRadio
 	def initialize
 
 		# File definitions
-		@station_file = File.expand_path '~/.covert_radio_stations.yml'
+		@station_file = '/opt/covert-radio/var/station_list.yml'
 		@mp_control_file = '/tmp/mp-control'
 		@mp_info_file = '/tmp/mp-info'
 		@mp_error_file = '/tmp/mp-error'

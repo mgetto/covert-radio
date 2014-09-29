@@ -1,6 +1,8 @@
 #!/bin/bash
 
-sudo rm /usr/local/bin/covert-radio
+HOME="/opt/covert-radio"
+
+sudo rm -R $HOME
 sudo rm /etc/bash_completion.d/covert-radio
-rm ~/.covert_radio_stations.yml
+sudo rm /usr/local/bin/covert-radio
 

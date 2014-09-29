@@ -1,4 +1,4 @@
 ninja-radio
 ===========
 
-A cli internet radio player operating in the shadows.
+A cli internet radio interface operating in the shadows.

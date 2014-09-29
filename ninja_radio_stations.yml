@@ -1,0 +1,415 @@
+---
+
+-
+ name: 		swr3
+ url:		http://swr-mp3-m-swr3.akacast.akamaistream.net/7/720/137136/v1/gnl.akacast.akamaistream.net/swr-mp3-m-swr3
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		rock-antenne
+ url:		http://mp3channels.webradio.antenne.de:80/rockantenne
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		rock-antenne-alternative	
+ url:		http://mp3channels.webradio.rockantenne.de/alternative
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		rock-antenne-classic-perlen	
+ url:		http://mp3channels.webradio.rockantenne.de/classic-perlen
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		rock-antenne-heavy-metal	
+ url:		http://mp3channels.webradio.rockantenne.de/heavy-metal
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		byte-fm
+ url:		http://streamingserver01.byte.fm:8000/
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		triple-j	
+ url:		http://shoutmedia.abc.net.au:10426/
+ country:	Australia
+ lang:		English
+ desc:
+
+-
+ name: 		pure-rock
+ url:		http://webcast.wonc.org:8000/wonclive-128s
+ country:	USA
+ lang:		English
+ desc:
+
+-
+ name: 		bbc-worldservice	
+ url:		http://livewmstream-ws.bbc.co.uk.edgestreams.net/reflector:43021?
+ country:	UK
+ lang:		English
+ desc:
+
+-
+ name: 		bbc-radio-1	
+ url:		mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio1/radio1_bb_live_int_ep1_sl0
+ country:	UK
+ lang:		English
+ desc:
+
+-
+ name: 		bbc-radio-2
+ url:		mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio2/radio2_bb_live_int_ep1_sl0
+ country:	UK
+ lang:		English
+ desc:
+
+-
+ name: 		bbc-radio-3
+ url:		mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio3/radio3_bb_live_int_ep1_sl0
+ country:	UK
+ lang:		English
+ desc:
+
+-
+ name: 		bbc-radio-4
+ url:		mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio4/radio4_bb_live_int_ep1_sl0
+ country:	UK
+ lang:		English
+ desc:
+
+-
+ name: 		bbc-radio-4-extra
+ url:		mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio4/radio4xtra_bb_live_int_ep1_sl0
+ country:	UK
+ lang:		English
+ desc:
+
+-
+ name: 		bbc-radio-5-live
+ url:		mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio5/radio5_bb_live_int_ep1_sl0
+ country:	UK
+ lang:		English
+ desc:
+
+-
+ name: 		bbc-radio-5-live-sports
+ url:		mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio5/5spxtra_bb_live_int_ep1_sl0
+ country:	UK
+ lang:		English
+ desc:
+
+-
+ name: 		bbc-radio-6-music
+ url:		mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/6music/6music_bb_live_int_ep1_sl0
+ country:	UK
+ lang:		English
+ desc:
+
+-
+ name: 		live-ireland
+ url:		http://66.90.73.250:8080
+ country:	Ireland
+ lang:		English
+ desc:
+
+-
+ name: 		downtown-radio
+ url:		http://edgei-01-boh.sharp-stream.com:8000/downtown.mp3
+ country:	Ireland
+ lang:		English
+ desc:
+
+-
+ name: 		der-musiksender
+ url:		http://ber.radiostream.de:36889
+ country:	Austria
+ lang:		German
+ desc:
+
+-
+ name: 		superfly.fm
+ url:		http://89.207.144.68:8080/live
+ country:	Austria
+ lang:		German
+ desc:
+
+-
+ name: 		radio-swisspop
+ url:		http://stream.srg-ssr.ch/m/rsp/mp3_128
+ country:	Switzerland
+ lang:		German
+ desc:
+
+-
+ name: 		radio-swissjazz
+ url:		http://stream.srg-ssr.ch/m/rsj/mp3_128
+ country:	Switzerland
+ lang:		German
+ desc:
+
+-
+ name: 		groove-fm
+ url:		http://stream.groovefm.de:10028
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		punkrockers-radio
+ url:		http://stream.punkrockers-radio.de:8000/prr
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		radio-gfm-rockpop	
+ url:		http://streams.radio-gfm.net:8000/rockpop.mp3
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		radio-gfm-electro	
+ url:		http://streams.radio-gfm.net:8000/electro.mp3
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		radio-gfm-metal	
+ url:		http://streams.radio-gfm.net:8000/metal.mp3
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		theradio.cc
+ url:		http://theradio.cc:8000/trcc-stream.mp3
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		radio-regenbogen
+ url:		http://scast.regenbogen.de/live
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		die-neue-welle
+ url:		http://live.meine-neue-welle.de/dnw_128.mp3
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		klassik-radio
+ url:		http://edge.live.mp3.mdn.newmedia.nacamar.net/klassikradio128/livestream.mp3
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		mdr-sputnik
+ url:		http://c22033-ls.i.core.cdn.streamfarm.net/UjIe753Ui9922033/22033mdr/live/app2128740352/w2128904195/live_de_128.mp3
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		mdr-sputnik-rock
+ url:		http://c22033-l.i.core.cdn.streamfarm.net/22033mdr/live/3087mdr_sputnik/ch_rock_128.mp3
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		mdr-sputnik-club
+ url:		http://c22033-l.i.core.cdn.streamfarm.net/22033mdr/live/3087mdr_sputnik/ch_club_128.mp3
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		mdr-sputnik-insomnia
+ url:		http://c22033-l.i.core.cdn.streamfarm.net/22033mdr/live/3087mdr_sputnik/ch_insomnia_128.mp3
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		mdr-sputnik-popkult
+ url:		http://c22033-l.i.core.cdn.streamfarm.net/22033mdr/live/3087mdr_sputnik/ch_popkult_128.mp3
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		mdr-sputnik-roboton
+ url:		http://c22033-l.i.core.cdn.streamfarm.net/22033mdr/live/3087mdr_sputnik/ch_roboton_128.mp3
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		mdr-sputnik-black
+ url:		http://c22033-l.i.core.cdn.streamfarm.net/22033mdr/live/3087mdr_sputnik/ch_black_128.mp3
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		mdr-sputnik-soundcheck
+ url:		http://c22033-l.i.core.cdn.streamfarm.net/22033mdr/live/3087mdr_sputnik/ch_soundcheck_128.mp3
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		mdr-jump-live-channel
+ url:		http://c22033-ls.i.core.cdn.streamfarm.net/T3R6XGogC9922033/22033mdr/live/app2128740352/w2128904194/live_de_128.mp3
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		mdr-jump-rock-channel
+ url:		http://c22033-l.i.core.cdn.streamfarm.net/22033mdr/live/3087mdr_jump/ch_rock_128.mp3
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		mdr-jump-trend-channel
+ url:		http://c22033-l.i.core.cdn.streamfarm.net/22033mdr/live/3087mdr_jump/ch_trend_128.mp3
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		mdr-jump-in-the-mix-channel
+ url:		http://c22033-l.i.core.cdn.streamfarm.net/22033mdr/live/3087mdr_jump/ch_inthemix_128.mp3
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		mdr-klassik
+ url:		http://c22033-ls.i.core.cdn.streamfarm.net/spmL904bJ9922033/22033mdr/live/app2128740352/w2128904196/live_de_128.mp3
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		mdr1-radio-sachsen
+ url:		http://c22033-ls.i.core.cdn.streamfarm.net/Ohu6jU56x9922033/22033mdr/live/app2128740352/w2128904197/live_de_128.mp3
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		big-fm
+ url:		http://217.151.152.245:80/bigfm-mp3-96
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		einslive
+ url:		http://1live.akacast.akamaistream.net/7/706/119434/v1/gnl.akacast.akamaistream.net/1live
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		swr1-bw
+ url:		http://swr-mp3-m-swr1bw.akacast.akamaistream.net/7/245/137133/v1/gnl.akacast.akamaistream.net/swr-mp3-m-swr1bw
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		swr2
+ url:		http://swr-mp3-m-swr2.akacast.akamaistream.net/7/721/137135/v1/gnl.akacast.akamaistream.net/swr-mp3-m-swr2
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		swr4-bw
+ url:		http://swr-mp3-m-swr4bw.akacast.akamaistream.net/7/426/137137/v1/gnl.akacast.akamaistream.net/swr-mp3-m-swr4bw
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		das-ding
+ url:		http://swr-mp3-m-dasding.akacast.akamaistream.net/7/588/137139/v1/gnl.akacast.akamaistream.net/swr-mp3-m-dasding
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		swr-info
+ url:		http://swr-mp3-m-info.akacast.akamaistream.net/7/40/137140/v1/gnl.akacast.akamaistream.net/swr-mp3-m-info
+ country:	Germany
+ lang:		German
+ desc:
+
+-
+ name: 		alternative-fm
+ url:		http://live.alternativefm.de/afm_128.mp3 
+ country:	Germany
+ lang:		German
+ desc:		
+
+-
+ name: 		der-junge-kulturkanal
+ url:		http://193.197.85.26:8000
+ country:	Germany
+ lang:		German
+ desc:		HS and UNI radio. Maybe not working. Under review
+
+-
+ name: 		bayern3
+ url:		http://br-mp3-bayern3-m.akacast.akamaistream.net/7/442/142692/v1/gnl.akacast.akamaistream.net/br_mp3_bayern3_m
+ country:	Germany
+ lang:		German
+ desc:		
+
+-
+ name: 		celtic-rock
+ url:		http://stream.laut.fm/celtic-rock
+ country:	Germany
+ lang:		German
+ desc:		
+
+-
+ name: 		acoustic-fm
+ url:		http://streaming.radionomy.com/Acoustic-FM
+ country:	Netherlands
+ lang:		English
+ desc:
+
+-
+ name: 		apostrophe
+ url:		http://stream.laut.fm:80/apostrophe
+ country:	Germany
+ lang:		German
+ desc:
+

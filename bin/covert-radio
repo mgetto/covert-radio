@@ -14,7 +14,7 @@ if ARGV.size < 1
 end
 
 # Test if the number of arguments is correct
-if ARGV[0].downcase == "tune"
+if ARGV[0].downcase == "listen"
 	if ARGV.size != 2
 		puts "Wrong number of arguments!"
 		exit
@@ -41,18 +41,14 @@ case command
 		radio.pause 		#it's a feature, not a bug
 	when "off"
 		radio.off
-	when "info"
-		radio.info 1
-	when "information-history"
-		radio.info 5
+	when "on-air"
+		radio.on_air 
 	when "station"
 		radio.station
-	when "stations"
-		radio.stations
-	when "stationlist"
-		radio.stationlist
-	when "tune"
-		radio.tune station
+	when "station-list"
+		radio.station_list
+	when "listen"
+		radio.listen station
 	else
 		puts "Invalid command!"
 		exit

@@ -28,7 +28,7 @@ class CovertRadio
 	end
 
 	# Print a list of stations (Really handy for autocompletion)
-	def stations
+	def station_list
 		@stations.each { |station|
 			puts station["name"]
 		}
@@ -38,17 +38,6 @@ class CovertRadio
 	def station
 		exit if not @mp_running
 		puts `tail #{@station_history_file} -n 1` 
-	end
-
-	# Print a list of stations (Really handy for autocompletion)
-	def stationlist
-		@stations.each { |station|
-			puts station["name"]
-			puts station["country"] if station["country"]
-			puts station["lang"] if station["lang"]
-			puts station["desc"] if station["desc"]
-			puts ""
-		}
 	end
 
 	# Pause (and unpause) playback
@@ -68,7 +57,7 @@ class CovertRadio
 
 	# Start mplayer and listen to the given station
 	# Only changes station if mplayer is already running
-	def tune station
+	def listen station
 
 		station_result = @stations.select { |s| s["name"] == station}
 
@@ -113,9 +102,9 @@ class CovertRadio
 	end
 
 	# output latest ICY INFO. (Song/Artist/Station info sent by station)
-	def info n
+	def on_air 
 		exit if not @mp_running
-		puts `grep ICY #{@mp_info_file} | tail -n #{n} |awk -F\\' '{print $(2)}'`
+		puts `grep ICY #{@mp_info_file} | tail -n 1 |awk -F\\' '{print $(2)}'`
 	end
 
 	# Helper to send commandos to mplayer (google for 'mplayer slave mode' to find a command overview)

@@ -6,7 +6,7 @@ _covert-radio()
 	COMPREPLY=()
 	cur="${COMP_WORDS[COMP_CWORD]}"
     prev="${COMP_WORDS[COMP_CWORD-1]}"
-    opts="pause resume off tune info information-history stations"
+    opts="pause resume off tune info information-history stations station"
 
     if [[ $COMP_CWORD == 1 ]] ; then
         COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )

@@ -16,6 +16,7 @@ class CovertRadio
 		@mp_control_file = @tmp_directory + 'mplayer-control'
 		@mp_info_file = @tmp_directory + 'mplayer-info'
 		@mp_error_file = @tmp_directory + 'mplayer-error'
+		@station_history_file = @tmp_directory + 'station_history'
 
 		# Load Station yaml
 		@stations = YAML.load_file(@station_file)
@@ -31,6 +32,12 @@ class CovertRadio
 		@stations.each { |station|
 			puts station["name"]
 		}
+	end
+
+	# Print the name of the current station
+	def station
+		exit if not @mp_running
+		puts `tail #{@station_history_file} -n 1` 
 	end
 
 	# Print a list of stations (Really handy for autocompletion)
@@ -88,6 +95,7 @@ class CovertRadio
 			# Create info and error file
 			File.write(@mp_info_file, "")
 			File.write(@mp_error_file, "")
+			File.write(@station_history_file, "")
 			
 			# Query used to start mplayer
 			# -quiet to supress noisy status updates
@@ -99,8 +107,9 @@ class CovertRadio
 
 			# start mplayer in seperate process and detach it from the current one
 			(pid = fork) ? Process.detach(pid) : exec(start_mplayer_cmd)
-
 		end
+
+		File.open(@station_history_file, 'a') { |file| file.write("#{station}\n") }
 	end
 
 	# output latest ICY INFO. (Song/Artist/Station info sent by station)

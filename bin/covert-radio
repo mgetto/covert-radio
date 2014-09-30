@@ -45,6 +45,8 @@ case command
 		radio.info 1
 	when "information-history"
 		radio.info 5
+	when "station"
+		radio.station
 	when "stations"
 		radio.stations
 	when "stationlist"

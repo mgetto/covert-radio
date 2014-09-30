@@ -51,7 +51,9 @@ case command
 		radio.station_list
 	when "listen"
 		radio.listen station
+	when "help"
+		radio.help
 	else
-		puts "Invalid command!"
+		puts "Invalid command! Run 'covert-radio help' for more info."
 		exit
 end

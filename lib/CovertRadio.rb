@@ -46,6 +46,19 @@ class CovertRadio
 		send_command "pause"
 	end
 
+	# Print a list of all available commands
+	def help
+		puts "listen <station> -- turn radio on and listen to <station>"
+		puts "pause -- toggle pause mode"
+		puts "resume -- toggle pause mode"
+		puts "off -- turn radio off"
+		puts "on-air -- display current content info if available"
+		puts "on-air-history -- display info for all previous content"
+		puts "station -- display name of current station"
+		puts "station-list -- display a list of all known stations"
+		puts "help -- display this help text"
+	end
+
 	# Turn off radio, shutdown mplayer, delete all temporary files
 	def off
 		exit if not @mp_running

@@ -43,6 +43,8 @@ case command
 		radio.off
 	when "on-air"
 		radio.on_air 
+	when "on-air-history"
+		radio.on_air_history 
 	when "station"
 		radio.station
 	when "station-list"

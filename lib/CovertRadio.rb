@@ -107,6 +107,12 @@ class CovertRadio
 		puts `grep ICY #{@mp_info_file} | tail -n 1 |awk -F\\' '{print $(2)}'`
 	end
 
+	# output all ICY INFO. (Song/Artist/Station info sent by station)
+	def on_air_history
+		exit if not @mp_running
+		puts `grep ICY #{@mp_info_file} |awk -F\\' '{print $(2)}'`
+	end
+
 	# Helper to send commandos to mplayer (google for 'mplayer slave mode' to find a command overview)
 	def send_command cmd
 		output = open(@mp_control_file, "w+") # the w+ means we don't block

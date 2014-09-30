@@ -1,4 +1,6 @@
 require 'yaml'
+require 'pathname'
+require 'fileutils'
 
 # Radio that allows to listen to internet radio stations.
 # Mplayer must be installed
@@ -10,15 +12,16 @@ class CovertRadio
 
 		# File definitions
 		@station_file = '/opt/covert-radio/var/station_list.yml'
-		@mp_control_file = '/tmp/mp-control'
-		@mp_info_file = '/tmp/mp-info'
-		@mp_error_file = '/tmp/mp-error'
+		@tmp_directory = Pathname.new '/tmp/covert-radio'
+		@mp_control_file = @tmp_directory + 'mplayer-control'
+		@mp_info_file = @tmp_directory + 'mplayer-info'
+		@mp_error_file = @tmp_directory + 'mplayer-error'
 
 		# Load Station yaml
 		@stations = YAML.load_file(@station_file)
 
 		# Test if the mplayer instance is active and get process id(s) if so
-		mplayer_running_raw = `lsof |grep mplayer |grep /tmp/mp-control |awk '{print $2}'`
+		mplayer_running_raw = `lsof |grep mplayer |grep #{@mp_control_file} |awk '{print $2}'`
 		@mp_pids = mplayer_running_raw.split "\n"
 		@mp_running = mplayer_running_raw && mplayer_running_raw != ""
 	end
@@ -53,9 +56,7 @@ class CovertRadio
 
 		`kill #{@mp_pids[0]}` if @mp_pids[0]
 
-		File.delete @mp_info_file
-		File.delete @mp_error_file
-		File.delete @mp_control_file
+		FileUtils.rm_rf @tmp_directory
 	end
 
 	# Start mplayer and listen to the given station
@@ -75,17 +76,18 @@ class CovertRadio
 			send_command "loadfile #{station_result[0]["stream"]}"
 		# Start mplayer if not
 		else
+			# Create directory for temporary files
+			if not Dir.exist?(@tmp_directory)
+				Dir.mkdir @tmp_directory
+			end
+
 			# Create control file (named pipe / fifo)
 			if not File.exist?(@mp_control_file)
 				`mkfifo #{@mp_control_file}`
 			end
 			# Create info and error file
-			if not File.exist?(@mp_info_file)
-				`touch #{@mp_info_file}`
-			end
-			if not File.exist?(@mp_error_file)
-				`touch #{@mp_error_file}`
-			end
+			File.write(@mp_info_file, "")
+			File.write(@mp_error_file, "")
 			
 			# Query used to start mplayer
 			# -quiet to supress noisy status updates

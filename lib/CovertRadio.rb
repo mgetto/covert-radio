@@ -22,8 +22,10 @@ class CovertRadio
 		@stations = YAML.load_file(@station_file)
 
 		# Test if the mplayer instance is active and get process id(s) if so
-		mplayer_running_raw = `lsof |grep mplayer |grep #{@mp_control_file} |awk '{print $2}'`
-		@mp_pids = mplayer_running_raw.split "\n"
+		if Dir.exists? @tmp_directory
+			mplayer_running_raw = `lsof |grep mplayer |grep #{@mp_control_file} |awk '{print $2}'`
+			@mp_pids = mplayer_running_raw.split "\n"
+		end
 		@mp_running = mplayer_running_raw && mplayer_running_raw != ""
 	end
 
